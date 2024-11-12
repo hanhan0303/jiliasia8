@@ -2,7 +2,7 @@ body {
   font-family: Microsoft Yahei, Helvetica Neue, Helvetica, Arial, Zawgyi-One, sans-serif;
   overscroll-behavior-y: contain;
   user-select: none;
-  background: #000 url("images/body-bg.jpeg") repeat center;
+  background: #000 url("../../images/body-bg.jpeg") repeat center;
   color: #fff;
   padding-top: 100px;
 
@@ -10,18 +10,23 @@ body {
     padding-top: 90px;
   }
 }
-b{
+
+b {
   font-weight: 700;
 }
-.text-link{
+
+.text-link {
   color: #FAFF00;
-  &:hover{
+
+  &:hover {
     color: #29edfc;
   }
 }
-.italics-text{
-  font-style:italic;
+
+.italics-text {
+  font-style: italic;
 }
+
 img {
   max-width: 100%;
   height: auto;
