@@ -47,3 +47,59 @@ a {
     color: #fff;
   }
 }
+
+.dropDown-btn-wrap.postBtn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 20px auto;
+
+  .dropDown-btn-toggle {
+    cursor: pointer;
+    color: #000;
+    background: #fc0;
+    min-width: 200px;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 15px;
+
+    &:hover {
+      background: rgb(255, 220, 80);
+    }
+  }
+
+  .dropDown-btn-links {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .dropDown-btn-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.3);
+      }
+    }
+
+  }
+
+  &.show {
+    .dropDown-btn-links {
+      display: block;
+    }
+  }
+}
+
+.content-list{
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}

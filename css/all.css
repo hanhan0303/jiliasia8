@@ -191,6 +191,62 @@ a:hover {
   color: #fff;
 }
 
+.dropDown-btn-wrap.postBtn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+}
+.dropDown-btn-wrap.postBtn .dropDown-btn-toggle {
+  cursor: pointer;
+  color: #000;
+  background: #fc0;
+  min-width: 200px;
+  padding: 12px 20px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 15px;
+}
+.dropDown-btn-wrap.postBtn .dropDown-btn-toggle:hover {
+  background: rgb(255, 220, 80);
+}
+.dropDown-btn-wrap.postBtn .dropDown-btn-links {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 100%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dropDown-btn-wrap.postBtn .dropDown-btn-links .dropDown-btn-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.dropDown-btn-wrap.postBtn .dropDown-btn-links .dropDown-btn-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.dropDown-btn-wrap.postBtn.show .dropDown-btn-links {
+  display: block;
+}
+
+.content-list {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
 .marquee-H {
   overflow: hidden;
   display: -webkit-box;
@@ -1808,6 +1864,9 @@ header .header-mobNav.active {
   .go-top-btn {
     bottom: 18.6666666667vmin;
   }
+}
+.go-top-btn .go-top-btn-img {
+  margin-bottom: 0;
 }
 
 .gamePlay-link {
