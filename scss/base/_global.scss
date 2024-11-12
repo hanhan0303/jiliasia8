@@ -1,0 +1,44 @@
+body {
+  font-family: Microsoft Yahei, Helvetica Neue, Helvetica, Arial, Zawgyi-One, sans-serif;
+  overscroll-behavior-y: contain;
+  user-select: none;
+  background: url("/images/body-bg.jpeg") repeat center;
+  color: #fff;
+  padding-top: 100px;
+
+  @include mobile-767 {
+    padding-top: 90px;
+  }
+}
+b{
+  font-weight: 700;
+}
+.text-link{
+  color: #FAFF00;
+  &:hover{
+    color: #29edfc;
+  }
+}
+.italics-text{
+  font-style:italic;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}

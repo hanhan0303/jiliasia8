@@ -1,0 +1,39 @@
+.marquee-H {
+  overflow: hidden;
+  display: flex;
+
+  &:hover {
+    p {
+      animation-play-state: paused;
+    }
+  }
+
+  .news-scroll {
+    animation: scroll01 40s linear infinite;
+  }
+
+  .news-scroll-copy {
+    animation: scroll02 40s linear infinite;
+    animation-delay: -20s;
+  }
+
+  @keyframes scroll01 {
+    from {
+      transform: translateX(100%)
+    }
+
+    to {
+      transform: translateX(-100%)
+    }
+  }
+
+  @keyframes scroll02 {
+    from {
+      transform: translateX(0%)
+    }
+
+    to {
+      transform: translateX(-200%)
+    }
+  }
+}

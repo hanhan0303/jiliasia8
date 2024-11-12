@@ -1,0 +1,212 @@
+.otherInfoNav {
+  background: rgba(68, 68, 68, 0.5);
+  padding: 25px 0;
+  position: relative;
+
+  @include mobile-767 {
+    padding: 10px 0;
+  }
+
+  &-prevBtn {
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.1;
+    background: #000;
+    border-radius: 50%;
+    margin-top: 0;
+
+    @include mobile-767 {
+      display: none;
+    }
+
+    i {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+      transform: translate(50%, -50%);
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      right: 50%;
+      opacity: 0.5;
+    }
+  }
+
+  &-content {
+    .otherInfoNav-items {
+      @include flex-center;
+
+      @include mobile-767 {
+        justify-content: start;
+      }
+
+      a {
+        margin: 0 10px;
+        padding: 15px 20px;
+        line-height: 14px;
+        font-size: 18px;
+        color: #888;
+        background: #141313;
+        border: 3px solid #141313;
+        border-radius: 25px;
+        cursor: pointer;
+        width: fit-content;
+
+        @include mobile-767 {
+          padding: 2.6666666667vmin 5.3333333333vmin;
+          font-size: 3.7333333333vmin;
+          line-height: 3.7333333333vmin;
+          border: 0.8vmin solid #141313;
+          border-radius: 6.6666666667vmin;
+        }
+
+        &.link-active {
+          color: #fff;
+          border: 3px solid #fc0;
+          box-shadow: 0 0 10px 0 #fc0;
+        }
+
+        &:hover {
+          color: #fff;
+          border: 3px solid #fc0;
+        }
+      }
+    }
+  }
+
+  &-nextBtn {
+    right: 10%;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.1;
+    background: #000;
+    border-radius: 50%;
+    margin-top: 0;
+
+    @include mobile-767 {
+      display: none;
+    }
+
+    i {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+      transform: translate(50%, -50%);
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      right: 50%;
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+
+}
+
+.otherInfo-container {
+  margin: 100px 110px 30px;
+
+  @include mobile-767 {
+    margin: 5.33vmin 2.66vmin 20vmin;
+  }
+
+  .otherInfo-titleList {
+    li {
+      margin: 0;
+      padding-bottom: 30px;
+      text-align: center;
+      color: #f80;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 1.1;
+
+      @include mobile-767 {
+        padding-bottom: 5.3333333333vmin;
+        font-size: 8vmin;
+      }
+    }
+  }
+
+  .otherInfo-txtList {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #666;
+
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.1;
+      margin: 20px 0px 10px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 20px 0px 10px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 10px 0px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 10px;
+
+      @include mobile-767 {
+        font-size: 4.2666666667vmin;
+        padding: 4vmin 2.6666666667vmin;
+      }
+    }
+
+    span {
+      display: block;
+      line-height: 1.1;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 10px 0px;
+    }
+
+    .numList {
+      list-style-type: decimal;
+      padding-left: 40px;
+
+      li {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 10px;
+
+        @include mobile-767 {
+          font-size: 4.2666666667vmin;
+          padding: 4vmin 2.6666666667vmin;
+        }
+      }
+    }
+  }
+
+  .otherInfo-userGuide,
+  .otherInfo-faq,
+  .otherInfo-bettingRules {
+    display: none;
+  }
+}
